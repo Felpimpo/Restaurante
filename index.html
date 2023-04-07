@@ -1,18 +1,178 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante | Felpimpo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
+
 <body>
-    
 
-    
-<script src="index.js"></script>
+    <!-- ================== HOME ================== -->
+
+    <header class="max-width bg" id="home">
+        <div class="container">
+            <div class="menu">
+                <div class="logo"></div>
+                <div class="desktop-menu">
+                    <ul>
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#about"> Sobre </a></li>
+                        <li><a href="#service"> Serviços </a></li>
+                        <li><a href="#menu"> Menu </a></li>
+                        <li><a href="#contact"> App </a></li>
+                    </ul>
+                </div>
+
+                <div class="mobile-menu" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul id="myLinks">
+                        <li><a href="#home"> Home </a></li>
+                        <li><a href="#about"> Sobre </a></li>
+                        <li><a href="#service"> Serviços </a></li>
+                        <li><a href="#menu"> Menu </a></li>
+                        <li><a href="#contact"> App </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="call">
+                <div class="left">
+                    <img src="/img/1.png" alt="">
+                </div>
+                <div class="right">
+                    <h1 class="color-laranja text-gd">Restaurante Felpimpo</h1>
+                    <h2 class="color-cinza-1 text-md"> Experimente a melhor comida da região </h2>
+                    <button>Ver menu</button>
+                </div>
+            </div>
+        </div>
+        <button id="back-to-top">^</button>
+    </header>
+
+    <!-- ================== SOBRE ================== -->
+
+    <section class="max-width bg" id="about">
+        <div class="container">
+            <div class="call">
+                <div class="left">
+                    <span class="text-title color-laranja">Sobre Nós</span>
+                    <h2 class="text-md color-cinza-1"> Nós cozinhamos a comida mais saborosa</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quos nemo dolores repudiandae
+                        laborum similique!</p>
+                    <button>Sabia Mais</button>
+                </div>
+                <div class="right">
+                    <img src="/img/7.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== SERVIÇOS ================== -->
+
+    <section class="max-width bg" id="service">
+        <div class="container">
+            <div class="content">
+                <div class="titulo">
+                    <span class="text-title color-laranja">Ofertas</span>
+                    <h2 class="text-md color-cinza-1"> Nosso serviços</h2>
+                </div>
+                <div class="down">
+                    <div class="box">
+                        <i class="fa fa-cutlery text-gd color-laranja"></i>
+                        <h2>A melhor comida</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, quibusdam.</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa-sharp fa-solid fa-pizza-slice text-gd color-laranja"></i>
+                        <h2>A comida mais marcante</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, tenetur.</p>
+                    </div>
+                    <div class="box">
+                        <i class="fa fa-motorcycle text-gd color-laranja"></i>
+                        <h2>Entrega Rapida</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, tempore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== MENU ================== -->
+
+    <section class="max-width bg" id="menu">
+        <div class="container">
+            <div class="content">
+                <div class="titulo">
+                    <span class="text-title color-laranja"> Refeições </span>
+                    <h2 class="text-md color-cinza-1"> Favoritas dos Clientes </h2>
+                </div>
+                <div class="down">
+                    <div class="box">
+                        <img src="/img/3.png">
+                        <h2 class="color-laranja">Salada Rucula</h2>
+                        <p class="text-md">Perfeito para veganos</p>
+                        <p>R$ 23,99</p>
+                    </div>
+                    <div class="box">
+                        <img src="/img/6.png">
+                        <h2 class="color-laranja"> Hamburguer</h2>
+                        <p class="text-md">Carne Artesanal</p>
+                        <p>R$ 38,99</p>
+                    </div>
+                    <div class="box">
+                        <img src="/img/2.png">
+                        <h2 class="color-laranja">Macarrão</h2>
+                        <p class="text-md">Massa leve</p>
+                        <p>R$ 34,99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== Contato ================== -->
 
 
+    <section class="max-width bg" id="contact">
+        <div class="container">
+            <div class="call">
+                <div class="left">
+                    <span class="text-title color-laranja"> App </span>
+                    <h2 class="text-md color-cinza-1"> O aplicativo está disponivel </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum error qui officiis eum quo
+                        perspiciatis itaque molestiae ex aliquam molestias?</p>
+                    <div class="info">
+                        <img src="/img/apple.png">
+                        <img src="/img/google.png">
+                    </div>
+                </div>
+                <div class="right">
+                    <img src="/img/cell.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================== Footer ================== -->
+
+    <footer>
+        <div class="container">
+            <img src="/img/logo.png">
+            <p class="text-pq">Copyright 2023 <span class="color-laranja">Felpimpo</span> All Rights Reserved </p>
+            <p class="text-pq">Tel: 5845-5845</p>
+        </div>
+    </footer>
+
+    <!-- ================== JAVASCRIPT ================== -->
+
+    <script src="index.js">
+
+    </script>
 </body>
+
 </html>
